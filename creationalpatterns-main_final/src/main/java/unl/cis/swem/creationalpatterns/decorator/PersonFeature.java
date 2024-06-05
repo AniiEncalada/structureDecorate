@@ -9,7 +9,7 @@ public class PersonFeature extends PersonDecorator{
 
     @Override
     public void tarea(){
-        System.out.println("I am a person with a feature");
         getTask().tarea();
+        System.out.println("and I am a person with a feature");
     }
 }

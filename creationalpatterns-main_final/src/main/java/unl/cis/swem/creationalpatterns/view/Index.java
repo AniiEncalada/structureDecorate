@@ -1,13 +1,7 @@
 package unl.cis.swem.creationalpatterns.view;
 
-import unl.cis.swem.creationalpatterns.decorator.PersonExtraHours;
-import unl.cis.swem.creationalpatterns.decorator.PersonFeature;
-import unl.cis.swem.creationalpatterns.domain.AdministrativePersonal;
-import unl.cis.swem.creationalpatterns.domain.Person;
-import unl.cis.swem.creationalpatterns.domain.SocialEconomicLevel;
-import unl.cis.swem.creationalpatterns.domain.Student;
-import unl.cis.swem.creationalpatterns.domain.Task;
-import unl.cis.swem.creationalpatterns.domain.Teacher;
+import unl.cis.swem.creationalpatterns.decorator.*;
+import unl.cis.swem.creationalpatterns.domain.*;
 
 public class Index {
 
@@ -18,21 +12,21 @@ public class Index {
 
        person= new PersonFeature(person);
         person.tarea();
-        System.out.println("-------------------------------------------------");
+        System.out.println("-------------------------------------------------\n");
         Task student = new Student("Karina", "Peréz", "12345", SocialEconomicLevel.LOW);
 
         student.tarea();
-        student = new PersonFeature(student);
+        student = new PersonBonus(student);
         student.tarea();
-        System.out.println("-------------------------------------------------");
+        System.out.println("-------------------------------------------------\n");
         Task teacher = new Teacher("Carlos", "Maldonado", "2345", "PhD");
         teacher.tarea();
         teacher = new PersonExtraHours(teacher);
         teacher.tarea();
-        System.out.println("-------------------------------------------------");
+        System.out.println("-------------------------------------------------\n");
         Task administrativePersonal = new AdministrativePersonal("Jane", "Jons", "1234", "Manager");
         administrativePersonal.tarea();
-        administrativePersonal = new PersonExtraHours(administrativePersonal);
+        administrativePersonal = new PersonExtraHoursAndBonus(administrativePersonal);
         administrativePersonal.tarea();
     }
     
