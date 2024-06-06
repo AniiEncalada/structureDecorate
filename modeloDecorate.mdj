@@ -3258,7 +3258,7 @@
 											"top": 300,
 											"width": 81.57080078125,
 											"height": 13,
-											"text": "Task"
+											"text": "Taskable"
 										},
 										{
 											"_type": "LabelView",
@@ -4380,7 +4380,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGPxumhnu6RFE4="
 							},
-							"name": "Task",
+							"name": "Taskable",
 							"ownedElements": [
 								{
 									"_type": "UMLAssociation",
