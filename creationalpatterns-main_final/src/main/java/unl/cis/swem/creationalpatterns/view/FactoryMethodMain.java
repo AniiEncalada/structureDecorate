@@ -48,6 +48,7 @@ public class FactoryMethodMain {
         University objUniversidad2 = University.getUniversity("UTPL", "San Cayetano");
         objUniversidad2.presentar();
         System.out.println("objUniversidad2: " + objUniversidad2.toString());
+        System.out.println("objUniversidad1: " + objUniversidad1.toString());
 
     }
 
