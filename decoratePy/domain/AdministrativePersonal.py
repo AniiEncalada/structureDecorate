@@ -6,4 +6,4 @@ class AdministrativePersonal (Person):
         self.charge = charge
 
     def task(self):
-        return f"Hi, I am {self.name} and I Work"    
+        return f"Hi, I am {self.name} {self.last_name}, I am {self.getBirthday()}, I am Administrative Personal and my charge is {self.charge}"    

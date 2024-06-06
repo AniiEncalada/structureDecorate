@@ -7,4 +7,4 @@ class Student (Person):
         self.socialEconomicLevel = socialEconomicLevel
 
     def task(self):
-        return f"Hi, I am {self.name} and I study"
+        return f"Hi, I am {self.name} {self.last_name}, I am {self.getBirthday()} and I am student"

@@ -6,4 +6,4 @@ class Teacher (Person):
         self.academicDegree = academicDegree
         
     def task(self):
-        return f"Hi, I am {self.name} and I Teach"
+        return f"Hi, I am {self.name} {self.last_name}, I am {self.getBirthday()}, and I am a teacher with academic degree {self.academicDegree}"
